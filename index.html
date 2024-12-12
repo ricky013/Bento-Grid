@@ -44,9 +44,12 @@
 					@apply text-lg leading-none;
 				}
 
-				@media screen and (min-width: 768px) {
+				@media screen and (min-width: 1280px) {
 					h1 {
-						@apply text-3xl;
+						@apply text-5xl;
+					}
+					h2 {
+						@apply text-3xl leading-none;
 					}
 				}
 			}
@@ -76,9 +79,9 @@
 			rel="stylesheet"
 		/>
 	</head>
-	<body class="bg-gray-100 dm-sans-custom">
+	<body class="bg-gray-100 dm-sans-custom h-screen grid lg:flex lg:flex-col">
 		<div
-			class="grid grid-cols-1 h-full gap-4 p-4 md:grid-cols-2 lg:grid-cols-4 lg:grid-rows-6 lg:py-12 lg:px-24"
+			class="grid grid-cols-1 h-full gap-4 p-4 md:grid-cols-2 lg:grid-cols-4 lg:grid-rows-6 lg:py-12 lg:px-32"
 		>
 			<!-- Sosial -->
 			<div
@@ -109,24 +112,24 @@
 			</div>
 			<!-- Consistent -->
 			<div
-				class="bg-yellow2 pt-4 ps-4 pe-4 gap-3 rounded-lg shadow flex flex-col justify-center lg:row-span-2"
+				class="bg-yellow2 pt-4 ps-4 pe-4 gap-3 rounded-lg shadow flex flex-col lg:row-span-2 lg:pb-0"
 			>
 				<h2>Maintain a consistent posting schedule.</h2>
 				<img
 					src="./assets/images/illustration-consistent-schedule.webp"
 					alt="consistent"
-					class="w-3/4"
+					class="w-3/4 lg:w-full"
 				/>
 			</div>
 			<!-- Schedule -->
 			<div
-				class="bg-purple1 p-4 gap-3 text-center rounded-lg shadow flex flex-col justify-center items-center text-lg lg:col-start-4 lg:row-start-1 lg:row-span-4"
+				class="bg-purple1 p-4 gap-3 rounded-lg shadow flex flex-col justify-between items-center text-lg lg:col-start-4 lg:row-start-1 lg:row-span-4"
 			>
 				<h2>Schedule to social media.</h1>
 				<img
 					src="./assets/images/illustration-schedule-posts.webp"
 					alt="schedule"
-					width="100%"
+					class="w-full"
 				/>
 				<p>
 					Optimize post timings to publish content at the perfect time for your
@@ -135,30 +138,30 @@
 			</div>
 			<!-- Grow -->
 			<div
-				class="bg-purple2 text-light p-4 gap-3 rounded-lg shadow flex flex-col lg:flex-row justify-center items-center text-center lg:row-span-2 lg:col-span-2 lg:order-last"
+				class="bg-purple2 text-light p-4 gap-3 rounded-lg shadow flex flex-col lg:flex-row justify-center items-center lg:row-span-2 lg:col-span-2 lg:order-last"
 			>
 				<img
 					src="./assets/images/illustration-grow-followers.webp"
 					alt="illustration-grow-followers"
-					width="150px"
+					class="w-full lg:w-1/3 h-full"
 				/>
-				<h1 class="px-12">Grow followers with non-stop content.</h1>
+				<h1 class="px-12 lg:px-0 text-center lg:text-left">Grow followers with non-stop content.</h1>
 			</div>
 			<!-- Audience -->
-			<div class="bg-white gap-3 p-4 rounded-lg shadow flex flex-col lg:row-span-2">
+			<div class="bg-white gap-3 p-4 rounded-lg shadow flex flex-col justify-between lg:row-span-2">
 				<h1>>56%</h1>
 				<p>faster audience growth</p>
 				<img
 					src="./assets/images/illustration-audience-growth.webp"
 					alt="audience"
-					class="w-1/2"
+					class="w-1/2 lg:w-3/4"
 				/>
 			</div>
 
 			<div class="grid gap-4 grid-cols-subgrid md:col-span-2 lg:col-span-1 lg:order-first lg:row-span-6">
 				<!-- Create -->
 				<div
-					class="grid bg-yellow1 p-4 rounded-lg shadow gap-4"
+					class="flex flex-col bg-yellow1 p-4 rounded-lg shadow gap-4 lg:justify-center lg:items-center"
 				>
 					<h2>
 						Create and schedule content <i class="text-purple2">quicker.</i>
@@ -166,18 +169,18 @@
 					<img
 						src="./assets/images/illustration-create-post.webp"
 						alt="create-post"
-						class="w-1/2"
+						class="w-1/2 lg:w-full"
 					/>
 				</div>
 				<!-- Write -->
 				<div
-					class="bg-yellow2 p-4 rounded-lg shadow flex flex-col justify-center gap-3 text-lg"
+					class="bg-yellow2 p-4 rounded-lg shadow flex flex-col justify-center lg:justify-between gap-3 text-lg"
 				>
 					<h2>Write your content using AI.</h2>
 					<img
 						src="./assets/images/illustration-ai-content.webp"
 						alt="ai-content"
-						class="w-1/2"
+						class="w-1/2 lg:w-full lg:1/2"
 					/>
 				</div>
 			</div>
