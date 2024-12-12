@@ -29,7 +29,7 @@ Users should be able to:
 ### Screenshot
 
 ![Dekstop](./assets/images/dekstop.png)
-![Mobile] (./assets/images/mobile.png)
+![Mobile](./assets/images/mobile.png)
 
 ### Links
 
